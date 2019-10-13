@@ -1,0 +1,46 @@
+[
+    {
+        "CategoryName":  "Điện tử",
+        "ProductID": "P123",
+        "ProductName": "Tivi Samsung",
+        "TotalView" : 10
+    },
+    {
+        "CategoryName":  "Điện tử",
+        "ProductID": "P124",
+        "ProductName": "Tivi Sony",
+        "TotalView" : 99
+    },
+    {
+        "CategoryName":  "Điện tử",
+        "ProductID": "P125",
+        "ProductName": "Tivi China",
+        "TotalView" : 15,
+        "Brand" : "Sony"
+    },
+    {
+        "CategoryName":  "Điện tử",
+        "ProductID": "P126",
+        "ProductName": "Tivi Tosiba",
+        "TotalView" : 1,
+        "Brand" : "Sony",
+        "Color" : "Red"
+    },
+    {
+        "CategoryName":  "Điện lạnh",
+        "ProductID": "P127",
+        "ProductName": "Máy giặt",
+        "TotalView" : 99,
+        "Brand" : "Panasonic",
+        "Color" : "Gray"
+    },
+    {
+        "CategoryName":  "Điện lạnh",
+        "ProductID": "P128",
+        "ProductName": "Máy lạnh",
+        "TotalView" : 45,
+        "Brand" : "Sony",
+        "Color" : "Gray",
+        "Star" : 4.3
+    }
+]

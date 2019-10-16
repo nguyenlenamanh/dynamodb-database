@@ -133,7 +133,25 @@ var TableOtherparams = {
     }
 };
 
-/*dynamodb.createTable(TableUserparams, function(err, data) {
+var TableOrderparams = {
+    TableName : "Orders",
+    KeySchema: [       
+        { AttributeName: "OrderID", KeyType: "HASH"},
+        { AttributeName: "ProductID", KeyType: "RANGE"},
+    ],
+    AttributeDefinitions: [       
+        { AttributeName: "OrderID", AttributeType: "S" },
+        { AttributeName: "ProductID", AttributeType: "S" }
+    ],
+    ProvisionedThroughput: {       
+        ReadCapacityUnits: 10, 
+        WriteCapacityUnits: 10
+    }
+}
+
+
+
+dynamodb.createTable(TableUserparams, function(err, data) {
     if (err) {
         console.error("Unable to create table. Error JSON:", JSON.stringify(err, null, 2));
     } else {
@@ -147,7 +165,15 @@ dynamodb.createTable(TableProductparams, function(err, data) {
     } else {
         console.log("Created table. Table description JSON:", JSON.stringify(data, null, 2));
     }
-});*/
+});
+
+dynamodb.createTable(TableOrderparams, function(err, data) {
+    if (err) {
+        console.error("Unable to create table. Error JSON:", JSON.stringify(err, null, 2));
+    } else {
+        console.log("Created table. Table description JSON:", JSON.stringify(data, null, 2));
+    }
+});
 
 dynamodb.createTable(TableOtherparams, function(err, data) {
     if (err) {

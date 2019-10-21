@@ -68,7 +68,6 @@ var paramsEmail = {
     }
 };
 
-
 docClient.query(paramsUserInfo, function(err, data) {
     if (err) {
         console.error("Unable to query. Error:", JSON.stringify(err, null, 2));

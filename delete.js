@@ -11,7 +11,7 @@ AWS.config.update({
 var dynamodb = new AWS.DynamoDB();
 
 var params = {
-    TableName : "Others"
+    TableName : "Users"
 };
 
 dynamodb.deleteTable(params, function(err, data) {

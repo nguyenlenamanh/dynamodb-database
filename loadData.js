@@ -47,7 +47,8 @@ allUsersInfo.forEach(function(info) {
             "Favorite" : info.Favorite,
             "TotalPrice" : info.TotalPrice,
             "Date" : info.Date,
-            "DetailInfo" : info.DetailInfo
+            "DetailInfo" : info.DetailInfo,
+            "Status" : info.Status
         }
     };
 

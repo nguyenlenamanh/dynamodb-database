@@ -21,6 +21,7 @@
         "Varies": "Nu1DwpSkwm",
         "TotalPrice" : 1500000,
         "Date" : "05-10-2019",
+        "Status" : "Waiting",
         "DetailInfo" : {
             "OrderName" : "Nguyễn Thị xxx",
             "Address" : "123 Fake Address, Dont find me",
@@ -34,6 +35,7 @@
         "Varies": "FP0f6h7hFP",
         "TotalPrice" : 300000,
         "Date" : "07-10-2019",
+        "Status" : "Waiting",
         "DetailInfo" : {
             "OrderName" : "Nguyễn Thị xxx",
             "Address" : "123 Fake Address, Dont find me",

@@ -3,20 +3,23 @@
         "CategoryName":  "Điện tử",
         "ProductID": "P123",
         "ProductName": "Tivi Samsung",
-        "TotalView" : 10
+        "TotalView" : 10,
+        "Price" : 15000
     },
     {
         "CategoryName":  "Điện tử",
         "ProductID": "P124",
         "ProductName": "Tivi Sony",
-        "TotalView" : 99
+        "TotalView" : 99,
+        "Price" : 19000
     },
     {
         "CategoryName":  "Điện tử",
         "ProductID": "P125",
         "ProductName": "Tivi China",
         "TotalView" : 15,
-        "Brand" : "Sony"
+        "Brand" : "Sony",
+        "Price" : 1560000
     },
     {
         "CategoryName":  "Điện tử",
@@ -24,7 +27,8 @@
         "ProductName": "Tivi Tosiba",
         "TotalView" : 1,
         "Brand" : "Sony",
-        "Color" : "Red"
+        "Color" : "Red",
+        "Price" : 7900000
     },
     {
         "CategoryName":  "Điện lạnh",
@@ -32,7 +36,8 @@
         "ProductName": "Máy giặt",
         "TotalView" : 99,
         "Brand" : "Panasonic",
-        "Color" : "Gray"
+        "Color" : "Gray",
+        "Price" : 780000
     },
     {
         "CategoryName":  "Điện lạnh",
@@ -41,6 +46,7 @@
         "TotalView" : 45,
         "Brand" : "Sony",
         "Color" : "Gray",
-        "Star" : 4.3
+        "Star" : 4.3,
+        "Price" : 8500000
     }
 ]

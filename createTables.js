@@ -18,7 +18,8 @@ var TableUserparams = {
     AttributeDefinitions: [       
         { AttributeName: "UserID", AttributeType: "S" },
         { AttributeName: "Varies", AttributeType: "S" },
-        { AttributeName: "Email", AttributeType: "S" }
+        { AttributeName: "Email", AttributeType: "S" },
+        { AttributeName: "Status", AttributeType: "S" }
     ],
     ProvisionedThroughput: {       
         ReadCapacityUnits: 10, 
@@ -54,6 +55,22 @@ var TableUserparams = {
                     "Password","Salt"
                 ],
                 ProjectionType: "INCLUDE"
+            },
+            ProvisionedThroughput: {
+                ReadCapacityUnits: 1,
+                WriteCapacityUnits: 1
+            }
+        },
+        {
+            IndexName: "StatusIndex",
+            KeySchema: [
+                {
+                    AttributeName: "Status",
+                    KeyType: "HASH"
+                }
+            ],
+            Projection: {
+                ProjectionType: "ALL"
             },
             ProvisionedThroughput: {
                 ReadCapacityUnits: 1,
@@ -158,7 +175,7 @@ dynamodb.createTable(TableUserparams, function(err, data) {
         console.log("Created table. Table description JSON:", JSON.stringify(data, null, 2));
     }
 });
-/*
+
 dynamodb.createTable(TableProductparams, function(err, data) {
     if (err) {
         console.error("Unable to create table. Error JSON:", JSON.stringify(err, null, 2));
@@ -182,4 +199,3 @@ dynamodb.createTable(TableOtherparams, function(err, data) {
         console.log("Created table. Table description JSON:", JSON.stringify(data, null, 2));
     }
 });
-*/
